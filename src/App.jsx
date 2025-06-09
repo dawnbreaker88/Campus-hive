@@ -4,7 +4,7 @@ import Discussions from "./pages/Discussions";
 import Home from "./pages/Home";
 import Notes from "./pages/Notes";
 import News from "./pages/News";
-import Profile from "./pages/profile";
+import Profile from "./pages/Profile";
 import Footer from "./components/Footer";
 import Events from "./pages/Events";
 import Results from "./components/Results";
