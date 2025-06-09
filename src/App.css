@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@layer base {
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+  .glitch {
+    position: relative;
+    animation: glitch-animation 1s infinite;
+  }
+  @keyframes glitch-animation {
+    0% { text-shadow: 2px 2px 0px #ff00ff; }
+    50% { text-shadow: -2px -2px 0px #00ffff; }
+    100% { text-shadow: 2px 2px 0px #ff00ff; }
+  }
+  .typing::after {
+    content: "|";
+    animation: typing-animation 0.7s infinite;
+  }
+  
+  @keyframes typing-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .shimmer {
+    background: linear-gradient(90deg, rgb(45, 34, 209), rgb(233, 8, 8), rgb(224, 228, 7) );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-animation 10s infinite linear;
+  }
+  
+  @keyframes shimmer-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .typing {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    width: 0;
+    animation: typing 2s steps(15) forwards, blink 0.7s infinite;
+  }
+  .shimmer2 {
+    background: linear-gradient(90deg, rgb(219, 90, 16), rgb(190, 25, 196), rgb(218, 204, 13) );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-animation 10s infinite linear;
+  }
+  
+  @keyframes shimmer-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }

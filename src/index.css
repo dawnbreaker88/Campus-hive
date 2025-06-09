@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme{
+    --font-primary: "Poiret one"
+}
+
+@theme{
+    --font-hive: "Parkinsans"
+}
+
+
+@font-face {
+    font-family: "Poiret One";
+    src: url(../public/Poppins-Bold.ttf) format("truetype");
+
+}
+@font-face {
+    font-family: "Parkinsans";
+    src: url(../public/Parkinsans-Medium.ttf) format("truetype");
+
+}
